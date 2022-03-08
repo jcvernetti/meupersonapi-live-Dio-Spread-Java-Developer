@@ -1,19 +1,15 @@
-package one.digitalinnovation.meupersonapi.dto;
-
+package one.digitalinnovation.meupersonapi.dto.request;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import one.digitalinnovation.meupersonapi.entity.Phone;
 import org.hibernate.validator.constraints.br.CPF;
-
-import java.time.LocalDate;
-import java.util.List;
 
 import javax.validation.Valid;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.Size;
+import java.util.List;
 
 @Data
 @Builder
@@ -35,9 +31,9 @@ public class PersonDTO {
     @CPF
     private String cpf;
 
-    private LocalDate birthDate;
+    private String birthDate;
 
     @Valid
     @NotEmpty
-    private List<Phone> phones;
+    private List<PhoneDTO> phones;
 }

@@ -1,4 +1,4 @@
-package one.digitalinnovation.meupersonapi.dto;
+package one.digitalinnovation.meupersonapi.dto.request;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
